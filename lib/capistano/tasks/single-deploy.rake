@@ -2,7 +2,7 @@ namespace :deploy do
 
   desc 'Start a deployment, make sure server(s) ready.'
   task :starting do
-
+    invoke 'load:defaults'
   end
 
   desc 'Update server(s) by setting up a new release.'
