@@ -27,9 +27,19 @@ end
 desc 'Deploy a new release.'
 task :deploy do
   set(:deploying, true)
-  %w{ starting started updating updated finishing finished }.each do |task|
+  %w{ starting updating finishing finished }.each do |task|
     invoke "deploy:#{task}"
   end
 end
 task default: :deploy
 
+
+
+## Compatibility with Cap 2.x
+namespace :load do
+
+    task :defaults do
+        set :repo_url, -> { fetch(:repository) }
+    end
+
+end
