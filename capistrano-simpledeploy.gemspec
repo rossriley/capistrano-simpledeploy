@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'capistrano-simpledeploy'
-  spec.version       = '0.0.1'
+  spec.version       = '0.0.4'
   spec.authors       = ["Ross Riley"]
   spec.email         = ["riley.ross@gmail.com"]
   spec.description   = %q{An extension to handle single version deploys for Capistrano 3.x}

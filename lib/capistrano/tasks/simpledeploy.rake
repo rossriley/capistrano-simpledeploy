@@ -2,7 +2,6 @@ namespace :deploy do
 
   desc 'Start a deployment, make sure server(s) ready.'
   task :starting do
-    invoke 'load:defaults'
   end
 
   desc 'Update server(s) by setting up a new release.'
@@ -32,14 +31,4 @@ task :deploy do
   end
 end
 task default: :deploy
-
-
-
-## Compatibility with Cap 2.x
-namespace :load do
-
-    task :defaults do
-        set :repo_url, -> { fetch(:repository) }
-    end
-
-end
+invoke 'load:defaults'
