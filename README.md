@@ -14,10 +14,9 @@ The module is designed as a drop-in replacement for the standard capistrano/depl
 1. You need a `Capfile` in the root of your project. Make it look something like this:
 
 ```
+# Include the Capistrano Dependencies
 require 'rubygems'
 require 'bundler/setup'
-
-# Load DSL and Setup Up Stages
 require 'capistrano/setup'
 require 'capistrano/simpledeploy'
 
