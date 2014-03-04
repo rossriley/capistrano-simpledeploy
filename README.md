@@ -11,7 +11,7 @@ The module is designed as a drop-in replacement for the standard capistrano/depl
 
 #### The Quick-Start Guide
 
-1. You need a `Capfile` in the root of your project. Make it look something like this:
+Step 1: You need a `Capfile` in the root of your project. Make it look something like this:
 
 ```
 # Include the Capistrano Dependencies
@@ -42,7 +42,7 @@ task :production do
 end
 ```
 
-2. You need a Gemfile to define the capistrano dependencies. Make `Gemfile` in the root of your project and add the following:
+Step 2: You need a Gemfile to define the capistrano dependencies. Make `Gemfile` in the root of your project and add the following:
 
 ```
 source 'https://rubygems.org'
@@ -51,7 +51,7 @@ gem 'capistrano', '~> 3.1'
 gem 'capistrano-simpledeploy'
 ```
 
-3. Finally run `bundle` from the command line in the root directory of your project. You should get an output like the following:
+Step 3: Run `bundle` from the command line in the root directory of your project. You should get an output like the following:
 
 ```
 Fetching gem metadata from https://rubygems.org/.......
@@ -72,7 +72,7 @@ Using bundler (1.5.3)
 Your bundle is complete!
 ```
 
-4. Now when you want to deploy, you can just type: `cap production deploy`
+Step 4: Now when you want to deploy, you can just type: `cap production deploy`
 
 
 
