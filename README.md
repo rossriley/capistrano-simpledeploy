@@ -20,11 +20,13 @@ require 'bundler/setup'
 require 'capistrano/setup'
 require 'capistrano/simpledeploy'
 
+
+# Modify these settings to connect to your server and Git repo
 set :application,   "yourapp"
 set :deploy_to,     "."
 set :repo_url,      "git@github.com:<your repo details>"
 
-### Default stage
+### Default stage - this is required
 set :stage,         "production"
 
 
